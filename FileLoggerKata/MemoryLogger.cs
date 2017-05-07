@@ -7,9 +7,11 @@ namespace FileLoggerKata
     public class MemoryLogger: ILogger
     {
         private readonly List<String> _messages = new List<String>();
+        private bool _isFileLogExists = false;
         
         public void Log(string message)
         {
+            _isFileLogExists = true;
             _messages.Add(message);
         }
 
@@ -35,7 +37,7 @@ namespace FileLoggerKata
 
         public bool IsFileLogExists()
         {
-            throw new NotImplementedException();
+            return _isFileLogExists;
         }
     }
 }
