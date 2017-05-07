@@ -15,3 +15,8 @@ Para validar que el diseño y la funcionalidad son correctos, he implementado un
 
 
 Terminado el paso 3....
+
+P.D.
+
+https://twitter.com/ThePracticalDev/status/850748070698651649?s=09
+https://twitter.com/thepracticaldev/status/861222882227126272
