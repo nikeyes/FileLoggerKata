@@ -12,5 +12,6 @@ namespace FileLoggerKata
         String GetLastMessage();
         int GetNumMessages();
         String GetFileLogName();
+        string GetFileLogPath();
     }
 }

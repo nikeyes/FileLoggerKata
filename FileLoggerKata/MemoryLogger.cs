@@ -27,5 +27,10 @@ namespace FileLoggerKata
         {
             return "log.txt";
         }
+
+        public string GetFileLogPath()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

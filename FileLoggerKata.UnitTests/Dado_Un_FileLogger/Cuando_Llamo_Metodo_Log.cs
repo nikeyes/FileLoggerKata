@@ -57,5 +57,17 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Entonces_El_Fichero_log_txt_Esta_En_La_Misma_Ruta_Que_La_App()
+        {
+            String expected = @"D:\desarrollo\git\repos\FileLoggerKata\FileLoggerKata.UnitTests\bin\Debug";
+
+            _sut.Log("Mensaje");
+
+            String actual = _sut.GetFileLogPath();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
