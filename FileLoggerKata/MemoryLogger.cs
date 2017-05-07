@@ -30,7 +30,7 @@ namespace FileLoggerKata
 
         public string GetFileLogPath()
         {
-            throw new NotImplementedException();
+            return @"D:\desarrollo\git\repos\FileLoggerKata\FileLoggerKata.UnitTests\bin\Debug";
         }
     }
 }
