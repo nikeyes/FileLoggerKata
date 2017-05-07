@@ -40,7 +40,7 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
             _sut.Log("Mensaje Obligatorio 2");
             _sut.Log("Mensaje Obligatorio 3");
 
-            String actual = _sut.GetNumMessages();
+            int actual = _sut.GetNumMessages();
 
             Assert.AreEqual(expected, actual);
         }
