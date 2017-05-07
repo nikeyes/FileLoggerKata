@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace FileLoggerKata
 {
-    public class FileLogger
+    public class MemoryLogger: ILogger
     {
         private readonly List<String> _messages = new List<String>();
         
