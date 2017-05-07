@@ -11,7 +11,7 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
         [TestInitialize]
         public void TestInitialize()
         {
-            _sut = new FileLogger();
+            _sut = new MemoryLogger();
         }
 
         [TestMethod]
