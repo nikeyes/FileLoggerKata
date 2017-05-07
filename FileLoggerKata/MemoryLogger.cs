@@ -25,7 +25,7 @@ namespace FileLoggerKata
 
         public string GetFileLogName()
         {
-            throw new NotImplementedException();
+            return "log.txt";
         }
     }
 }
