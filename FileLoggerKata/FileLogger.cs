@@ -7,5 +7,10 @@ namespace FileLoggerKata
         public void Log(string v)
         {
         }
+
+        public string GetLastMessage()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

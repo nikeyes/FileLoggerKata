@@ -14,5 +14,19 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
             _sut.Log("Mensaje Obligatorio");
 
         }
+
+        [TestMethod]
+        public void Entonces_Anade_El_Mensaje_Al_Final_Del_Fichero_De_Log()
+        {
+            FileLogger _sut = new FileLogger();
+            
+            String expected = "Mensaje Obligatorio";
+
+            _sut.Log("Mensaje Obligatorio");
+
+            String actual = _sut.GetLastMessage();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
