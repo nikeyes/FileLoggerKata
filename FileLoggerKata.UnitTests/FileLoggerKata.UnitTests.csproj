@@ -53,8 +53,13 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Dado_Un_FileLogger\Cuando_Llamo_Metodo_Log.cs" />
-    <Compile Include="Dado_Un_FileLogger\FileLogger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FileLoggerKata\FileLoggerKata.csproj">
+      <Project>{453e7408-d9d4-4b6b-9973-fc27d214d42d}</Project>
+      <Name>FileLoggerKata</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
