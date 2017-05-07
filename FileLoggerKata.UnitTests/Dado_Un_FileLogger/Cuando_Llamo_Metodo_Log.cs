@@ -28,5 +28,21 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Y_Se_Han_Logado_3_Mensajes_Entonces_Hay_3_Mensajes_En_El_Log()
+        {
+            FileLogger _sut = new FileLogger();
+
+            int expected = 3;
+
+            _sut.Log("Mensaje Obligatorio 1");
+            _sut.Log("Mensaje Obligatorio 2");
+            _sut.Log("Mensaje Obligatorio 3");
+
+            String actual = _sut.GetNumMessages();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

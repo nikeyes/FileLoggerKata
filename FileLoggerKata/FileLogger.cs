@@ -15,5 +15,10 @@ namespace FileLoggerKata
         {
             return _message;
         }
+
+        public string GetNumMessages()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
