@@ -85,5 +85,15 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
             Assert.AreEqual(expected, actual, "El Fichero no se ha creado");
 
         }
+
+        [TestMethod]
+        public void Y_El_Fichero_Existe_Entonces_Logea()
+        {
+            bool initialIsFileLogExists = _sut.IsFileLogExists();
+
+            _sut.Log("Mensaje");
+
+            Assert.IsTrue(initialIsFileLogExists, "El fichero no existe antes de Log");
+        }
     }
 }
