@@ -103,6 +103,7 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
             Assert.IsTrue(actualIsFileLogExists, "El fichero no existe antes de Log");
             Assert.AreEqual(2, actualNumMessges, "Número de mensajes incorrecto");
             Assert.AreEqual("Mensaje 2", actualLastMessage, "LastMessage incorrecto");
+
         }
     }
 }
