@@ -6,9 +6,9 @@ namespace FileLoggerKata
     {
         private String _message = String.Empty;
         
-        public void Log(string v)
+        public void Log(string message)
         {
-            _message = v;
+            _message = message;
         }
 
         public string GetLastMessage()
