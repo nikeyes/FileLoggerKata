@@ -45,5 +45,17 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
 
             Assert.AreEqual(expected, actual);
         }
+
+        [TestMethod]
+        public void Entonces_Escribe_Logs_En_Fichero_log_txt()
+        {
+            String expected = "log.txt";
+
+            _sut.Log("Mensaje");
+
+            String actual = _sut.GetLastMessage();
+
+            Assert.AreEqual(expected, actual);
+        }
     }
 }

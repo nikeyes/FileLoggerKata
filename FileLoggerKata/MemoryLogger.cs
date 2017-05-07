@@ -22,5 +22,10 @@ namespace FileLoggerKata
         {
             return _messages.Count;
         }
+
+        public string GetFileLogName()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
