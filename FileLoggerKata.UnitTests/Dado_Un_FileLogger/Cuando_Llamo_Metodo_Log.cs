@@ -53,7 +53,7 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
 
             _sut.Log("Mensaje");
 
-            String actual = _sut.GetLastMessage();
+            String actual = _sut.GetFileLogName();
 
             Assert.AreEqual(expected, actual);
         }
