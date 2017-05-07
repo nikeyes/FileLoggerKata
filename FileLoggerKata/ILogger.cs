@@ -13,5 +13,6 @@ namespace FileLoggerKata
         int GetNumMessages();
         String GetFileLogName();
         string GetFileLogPath();
+        bool IsFileLogExists();
     }
 }

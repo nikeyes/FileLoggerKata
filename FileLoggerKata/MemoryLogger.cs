@@ -32,5 +32,10 @@ namespace FileLoggerKata
         {
             return @"D:\desarrollo\git\repos\FileLoggerKata\FileLoggerKata.UnitTests\bin\Debug";
         }
+
+        public bool IsFileLogExists()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

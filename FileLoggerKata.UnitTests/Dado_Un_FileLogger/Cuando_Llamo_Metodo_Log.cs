@@ -7,11 +7,11 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
     public class Cuando_Llamo_Metodo_Log
     {
         private ILogger _sut;
-        
+
         [TestInitialize]
         public void TestInitialize()
         {
-           _sut = new MemoryLogger();
+            _sut = new MemoryLogger();
         }
 
         [TestMethod]
@@ -68,6 +68,22 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
             String actual = _sut.GetFileLogPath();
 
             Assert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void Y_El_Fichero_No_Existe_Entonces_Lo_Crea()
+        {
+            bool expected = true;
+
+            bool initialIsFileLogExists = _sut.IsFileLogExists();
+
+            _sut.Log("Mensaje");
+
+            bool actual = _sut.IsFileLogExists();
+
+            Assert.IsFalse(initialIsFileLogExists, "El fichero existe antes de Log");
+            Assert.AreEqual(expected, actual, "El Fichero no se ha creado");
+
         }
     }
 }
