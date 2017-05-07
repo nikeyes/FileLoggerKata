@@ -15,4 +15,9 @@ He utilizado los tests unitarios con un MemoryLogger para diseñar el contrato q
 
 Para validar que el diseño y la funcionalidad son correctos he implementado un FileLogger real (https://github.com/nikeyes/FileLoggerKata/commit/59627bae9342f11333699ae4c6bf0f891b108008) y he convertido lo tests unitarios en tests de integración con solo cambiar el **new del MemoryLogger** por un **new de un FileLogger** en el TestInitialize.
 
-Terminado el paso 3....
+Terminado el paso 3.... Continuará....
+
+https://twitter.com/ThePracticalDev/status/850748070698651649?s=09  
+https://twitter.com/thepracticaldev/status/861222882227126272  
+https://s-media-cache-ak0.pinimg.com/originals/e8/11/e4/e811e4d1f27b6f70006307ae7dce38d8.gif  
+https://s-media-cache-ak0.pinimg.com/originals/69/eb/29/69eb293ffb2d1166cbaed9be4dd3d348.gif  
