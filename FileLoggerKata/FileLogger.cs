@@ -22,7 +22,7 @@ namespace FileLoggerKata
 
         public string GetFileLogPath()
         {
-           return Path.GetDirectoryName(FILE_NAME);
+            return new FileInfo(FILE_NAME).Directory.FullName;
         }
 
         public string GetLastMessage()
