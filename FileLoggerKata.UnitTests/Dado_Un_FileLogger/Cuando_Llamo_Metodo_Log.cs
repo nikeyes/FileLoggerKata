@@ -87,13 +87,22 @@ namespace FileLoggerKata.UnitTests.Dado_Un_FileLogger
         }
 
         [TestMethod]
-        public void Y_El_Fichero_Existe_Entonces_Logea()
+        public void Y_El_Fichero_Existe_Entonces_Lo_Usa_Y_Logea()
         {
-            bool initialIsFileLogExists = _sut.IsFileLogExists();
-
             _sut.Log("Mensaje");
 
-            Assert.IsTrue(initialIsFileLogExists, "El fichero no existe antes de Log");
+            bool initialFileLogExists = _sut.IsFileLogExists();
+
+            _sut.Log("Mensaje 2");
+
+            bool actualIsFileLogExists = _sut.IsFileLogExists();
+            int actualNumMessges = _sut.GetNumMessages();
+            string actualLastMessage = _sut.GetLastMessage();
+
+            Assert.IsTrue(initialFileLogExists, "El fichero no existe antes de Log");
+            Assert.IsTrue(actualIsFileLogExists, "El fichero no existe antes de Log");
+            Assert.AreEqual(2, actualNumMessges, "Número de mensajes incorrecto");
+            Assert.AreEqual("Mensaje 2", actualLastMessage, "LastMessage incorrecto");
         }
     }
 }
